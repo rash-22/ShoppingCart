@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet"> 
+    <style>  
+    table, th, td {  
+      border: 1px solid white;  
+      border-style: dotted;
+    }  
+    </style>  
+    <script>
+       function calc() {
+        var sum = 0;
+        if (c1.checked == true) {
+          sum = sum + 3999;
+        }
+        if (c2.checked == true) {
+          sum = sum + 4999;
+        }
+        if (c3.checked == true) {
+          sum = sum + 5969;
+        }
+        alert("Total Cost : " + sum + "$");
+      }
+    </script>
+  </head>
+  <body>
+      <h1 style="text-align: center;">Shop</h1>
+      <form name="f1">
+        <table cellspacing="0" cellpadding="10px">
+          <tr>
+            <th>Select</th>
+            <th>Watches</th>
+            <th>Price</th>
+          </tr>
+          <tr>
+            <td>
+              <input type="checkbox" id="c1" />
+            </td>
+            <td>
+              <img src="https://images.unsplash.com/photo-1512034705137-dc51c5ed36f4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=742&q=80" />
+            </td>
+            <td>Price : 3999</td>
+          </tr>
+          <tr>
+            <td>
+              <input type="checkbox" id="c2" />
+            </td>
+            <td>
+              <img src="https://images.unsplash.com/photo-1526045431048-f857369baa09?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80" alt="watch2" />
+            </td>
+            <td>Price : 4999</td>
+          </tr>
+          <tr>
+            <td>
+              <input type="checkbox" id="c3" />
+            </td>
+            <td>
+              <img src="https://images.unsplash.com/photo-1495857000853-fe46c8aefc30?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="watch3" />
+            </td>
+            <td>Price : 5969</td>
+          </tr>
+        </table>
+        <br />
+        <input type="button" value="Checkout" onclick="calc()" />
+      </form>
+  </body>
+  </html>
